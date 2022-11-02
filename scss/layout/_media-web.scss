@@ -1,0 +1,113 @@
+@media (min-width:768px) {
+    .navBar{
+        display: flex;
+        font-size: 20px;
+        font-family: $tipo-texto-parrafo;
+        font-weight: lighter;
+        gap: 100px;
+        justify-content: space-evenly;
+        list-style: none;
+        align-items: center;
+        flex-wrap: row wrap;
+    }
+
+    .container{
+        padding: $padding-main-container;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "box-1 box-2"
+        "box-3 box-4"
+        ;
+    }
+
+    .container-2{
+        padding: $padding-main-container;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "booksbox-2"
+        "booksbox-3"
+        ;
+    }
+
+    .container-3{
+        padding: $padding-main-container;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "month-1"
+        "month-2"
+        ;
+    }
+
+    .container-4{
+        padding: $padding-main-container;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "box-15"
+        "box-16"
+        ;
+    }
+
+    .container-5{
+        padding: $padding-main-container;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "review-1 review-2"
+        "review-3 review-4"
+        ;
+    }
+    
+    .booksbox-1{
+        padding: $padding-box;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "book-1 book-2";
+    }
+
+    .booksbox-2{
+        padding: $padding-box;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "box-5 box-6 box-7"
+        ;
+    }
+
+    .booksbox-3{
+        padding: $padding-box;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "box-8 box-9";
+    }
+
+    .month-1{
+        padding: $padding-box;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "box-10 box-11 box-12"
+        ;
+    }
+
+    .month-2{
+        padding: $padding-box;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: "box-13 box-14";
+    }
+}

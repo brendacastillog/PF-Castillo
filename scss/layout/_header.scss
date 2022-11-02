@@ -1,0 +1,67 @@
+header{
+    .main-cont{
+        position: relative;
+        text-align: center;
+        .main{
+            color: $color-main;
+            font-size: $tipo-size-main;
+            font-weight: $tipo-weight-main;
+            font-family: $tipo-texto-main;
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .tracking-in-expand-fwd {
+            -webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            @keyframes tracking-in-expand-fwd {
+                0% {
+                letter-spacing: -0.5em;
+                -webkit-transform: translateZ(-700px);
+                transform: translateZ(-700px);
+                opacity: 0;
+                }
+                40% {
+                opacity: 0.6;
+                }
+                100% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                opacity: 1;
+                }
+            }
+        }
+    }
+
+    .navBar{
+        display: flex;
+        font-size: $tipo-size-nav;
+        font-family: $tipo-texto-parrafo;
+        font-weight: 300;
+        gap: 100px;
+        justify-content: space-evenly;
+        list-style: none;
+        align-items: center;
+        flex-wrap: row wrap;
+        padding: 20px;
+        .navBar button{
+            padding: 10px 50px;
+            margin: 0 20px;
+            border: 2px solid rgb(255, 230, 201);
+            background-color: transparent;
+            font-weight: $tipo-texto-parrafo;
+            font-size: $tipo-size-nav;
+            transition: all ease-in .4s;
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: rgba(170, 107, 45, 0.2) 0px 20px 20px -7px;
+            .navBar button:hover{
+                background-color:  rgb(255, 230, 201);
+                color: black;
+            }
+        }
+    }
+}

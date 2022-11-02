@@ -1,0 +1,86 @@
+main{
+    .subheader{
+        color: $color-subheader;
+        font-size: $tipo-size-sub;
+        font-family: $tipo-texto-parrafo;
+        font-weight: $tipo-weight-sub;
+        padding-bottom: $padding-subheader;
+    }
+
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        @keyframes tracking-in-expand {
+            0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+            }
+            40% {
+            opacity: 0.6;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
+    }
+
+    .book-title{
+        font-family: $tipo-texto-parrafo;
+        color: $color-book-title;
+        font-weight: $tipo-weight-sub;
+        font-size: $tipo-size-title;
+        padding: $padding-body;
+    }
+
+    .body{
+        font-family: $tipo-texto-parrafo;
+        color: $color-body;
+        font-style: italic;
+        font-size: $tipo-size-body;
+    }
+
+    .lista{
+        font-family: $tipo-texto-parrafo;
+        color: $color-body;
+        font-style: italic;
+        font-size: $tipo-size-body;
+        list-style: circle;
+        padding: 10px 20px;
+    }
+
+    .info{
+        font-family: $tipo-texto-parrafo;
+        color: $color-body;
+        font-size: $tipo-size-body;
+    }
+
+    .tropes{
+        font-family: $tipo-texto-parrafo;
+        font-style: italic;
+        font-size: $tipo-size-sub;
+        font-weight: $tipo-weight-sub;
+        color: $color-book-title;
+        text-align: center;
+        padding: $padding-subheader;
+    }
+
+    .date{
+        font-family: $tipo-texto-parrafo;
+        color: $color-fechas;
+        font-size: $tipo-size-body;
+        font-weight: 300;
+    }
+
+    .month{
+        color: $color-mes;
+        font-size: $tipo-size-sub;
+        font-family: $tipo-texto-parrafo;
+        font-weight: $tipo-weight-sub;
+        text-align: center;
+        padding: $padding-subheader;
+    }
+
+    .review-1{
+        padding-bottom: $padding-main-container;
+    }
+}
