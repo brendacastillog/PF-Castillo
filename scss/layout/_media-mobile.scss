@@ -1,15 +1,4 @@
 @media (max-width:320px) {
-    .navBar{
-        display: flex;
-        font-size: 20px;
-        font-family: $tipo-texto-parrafo;
-        font-weight: lighter;
-        gap: 100px;
-        justify-content: space-evenly;
-        list-style: none;
-        align-items: center;
-        flex-wrap: row wrap;
-    }
 
     .container{
         padding: $padding-main-container;

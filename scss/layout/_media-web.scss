@@ -1,14 +1,31 @@
 @media (min-width:768px) {
     .navBar{
         display: flex;
-        font-size: 20px;
+        font-size: $tipo-size-nav;
         font-family: $tipo-texto-parrafo;
-        font-weight: lighter;
+        font-weight: 300;
         gap: 100px;
         justify-content: space-evenly;
         list-style: none;
         align-items: center;
         flex-wrap: row wrap;
+        padding: 20px;
+        .navBar button{
+            padding: 10px 50px;
+            margin: 0 20px;
+            border: 2px solid rgb(255, 230, 201);
+            background-color: transparent;
+            font-weight: $tipo-texto-parrafo;
+            font-size: $tipo-size-nav;
+            transition: all ease-in .4s;
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: rgba(170, 107, 45, 0.2) 0px 20px 20px -7px;
+            .navBar button:hover{
+                background-color:  rgb(255, 230, 201);
+                color: black;
+            }
+        }
     }
 
     .container{
